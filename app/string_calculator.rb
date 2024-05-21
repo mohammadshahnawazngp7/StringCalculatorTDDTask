@@ -6,6 +6,8 @@ class StringCalculator
       return numbers.to_i
     end
 
-    numbers.split("").map(&:to_i).sum
+    delimiter = ','
+    numbers = numbers.split(/#{delimiter}|\n/)
+    numbers.inject(0) { |sum, num| sum + num.to_i }
   end
 end
