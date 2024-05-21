@@ -7,6 +7,11 @@ class StringCalculator
     end
 
     delimiter = ','
+    if numbers.start_with?("//")
+      delimiter = numbers[2]
+      numbers = numbers[(numbers.index("\n")+1)..-1]
+    end
+
     numbers = numbers.split(/#{delimiter}|\n/)
     numbers.inject(0) { |sum, num| sum + num.to_i }
   end
