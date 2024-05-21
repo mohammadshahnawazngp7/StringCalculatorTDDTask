@@ -1,24 +1,17 @@
-# README
+# README String Calculator Tdd task
+## Overview
+String Calculator adds numbers passed as a string. It accept strings with  different delimiters, new lines between numbers, and negative numbers and  gives the sum of input numbers in given string.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Set up the project
+### Clone the repository:
+`git clone https://github.com/mohammadshahnawazngp7/StringCalculatorTDDTask`
 
-Things you may want to cover:
+### project directory:   
+`cd string_calculator_tdd_task`
 
-* Ruby version
+### Install Dependencies:    
+`bundle install`  
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run RSpec:
+You can run RSpec to execute your tests.
+`rspec spec/string_calculator_spec.rb`  
